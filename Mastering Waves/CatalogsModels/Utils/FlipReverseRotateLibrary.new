@@ -1,0 +1,125 @@
+unit FlipReverseRotateLibrary;
+
+interface
+
+uses Dialogs, Windows, Graphics;
+  // The Rotation function is only for the Scanline Method.
+  // Note:  Windows NT supports a "plgblt" API call that can be used to rotate
+  // images.
+
+function RotateScanline90(const angle: Integer;
+  const Bitmap: TBitmap): TBitmap;
+
+implementation
+
+uses
+  Classes, // Rect
+  SysUtils; // Exception
+
+const
+  MaxPixelCount = 65536; // or some other arbitrarily large value
+
+type
+  EBitmapError = class(Exception);
+  TRGBArray = array[0..MaxPixelCount - 1] of TRGBTriple;
+  pRGBArray = ^TRGBArray;
+
+  //////////////////////////////////////////////////////////////////////////////
+  // Rotate 24-bits/pixel Bitmap any multiple of 90 degrees.
+function RotateScanline90(const angle: Integer;
+  const Bitmap: TBitmap): TBitmap;
+
+  // These four internal functions parallel the four cases in rotating a
+  // bitmap using the Pixels property.  See the RotatePixels example on
+  // the Image Processing page of efg's Computer Lab for an example of the
+  // use of the Pixels property (which is very slow).
+
+  // A Bitmap.Assign could be used for a simple copy.  A complete example
+  // using ScanLine is included here to help explain the other three cases.
+
+  function Rotate90DegreesCounterClockwise: TBitmap;
+  var
+    I: Integer;
+    J: Integer;
+    rowIn: pRGBArray;
+  begin
+    Result := TBitmap.Create;
+    Result.Width := Bitmap.Height;
+    Result.Height := Bitmap.Width;
+    Result.PixelFormat := Bitmap.PixelFormat; // only pf24bit for now
+
+    // Out[j, Right - i - 1] = In[i, j]
+    for J := 0 to Bitmap.Height - 1 do
+    begin
+      rowIn := Bitmap.ScanLine[J];
+      for I := 0 to Bitmap.Width - 1 do
+        pRGBArray(Result.ScanLine[Bitmap.Width - I - 1])[J] := rowIn[I]
+      end
+    end{Rotate90DegreesCounterClockwise};
+
+  // Could use Rotate90DegreesCounterClockwise twice to get a
+  // Rotate180DegreesCounterClockwise.  Rotating 180 degrees is the same
+  // as a Flip and Reverse
+  function Rotate180DegreesCounterClockwise: TBitmap;
+  var
+    I: Integer;
+    J: Integer;
+    rowIn: pRGBArray;
+    rowOut: pRGBArray;
+  begin
+    Result := TBitmap.Create;
+    Result.Width := Bitmap.Width;
+    Result.Height := Bitmap.Height;
+    Result.PixelFormat := Bitmap.PixelFormat; // only pf24bit for now
+
+    // Out[Right - i - 1, Bottom - j - 1] = In[i, j]
+    for J := 0 to Bitmap.Height - 1 do
+    begin
+      rowIn := Bitmap.ScanLine[J];
+      rowOut := Result.ScanLine[Bitmap.Height - J - 1];
+      for I := 0 to Bitmap.Width - 1 do
+        rowOut[Bitmap.Width - I - 1] := rowIn[I]
+      end
+
+    end{Rotate180DegreesCounterClockwise};
+
+  // Could use Rotate90DegreesCounterClockwise three times to get a
+  // Rotate270DegreesCounterClockwise
+  function Rotate270DegreesCounterClockwise: TBitmap;
+  var
+    I: Integer;
+    J: Integer;
+    rowIn: pRGBArray;
+  begin
+    Result := TBitmap.Create;
+    Result.Width := Bitmap.Height;
+    Result.Height := Bitmap.Width;
+    Result.PixelFormat := Bitmap.PixelFormat; // only pf24bit for now
+
+    // Out[Bottom - j - 1, i] = In[i, j]
+    for J := 0 to Bitmap.Height - 1 do
+    begin
+      rowIn := Bitmap.ScanLine[J];
+      for I := 0 to Bitmap.Width - 1 do
+        pRGBArray(Result.ScanLine[I])[Bitmap.Height - J - 1] := rowIn[I]
+      end
+    end{Rotate270DegreesCounterClockwise};
+
+begin
+  //IF   Bitmap.PixelFormat <> pf24bit
+  //THEN RAISE EBitmapError.Create('Can Rotate90 only 24-bit bitmap');
+
+  if (angle >= 0) and (angle mod 90 <> 0)
+  then raise EBitmapError.Create('Rotate90:  Angle not positive multiple of 90 degrees');
+
+  case (angle div 90) mod 4 of
+    1: Result := Rotate90DegreesCounterClockwise; // Anticlockwise for the Brits
+    2: Result := Rotate180DegreesCounterClockwise;
+    3: Result := Rotate270DegreesCounterClockwise
+      else
+      Result := nil// avoid compiler warning
+    end;
+
+end{RotateScanline90};
+
+end.

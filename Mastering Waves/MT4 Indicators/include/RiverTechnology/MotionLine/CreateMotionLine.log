@@ -1,0 +1,38 @@
+2;78;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;14:24;',' - variable expected
+1;41;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;14:25;'price_direction' - expression on global scope not allowed
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;14:25;'price_direction' - variable not defined
+1;41;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;14:42;'bias_direction' - expression on global scope not allowed
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;14:42;'bias_direction' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;38:4;'BuffMotionLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;40:8;'View_Bias' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;41:8;'View_Price' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;52:4;'BuffMotionLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;54:8;'View_Bias' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;55:8;'View_Price' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;71:9;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;75:13;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;78:13;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;82:24;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;99:10;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;103:13;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;107:13;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;111:24;'BuffTimeLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;128:61;'View_288minutes' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;146:67;'View_288minutes' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;152:14;'View_Bias' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;155:36;'bias_direction' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;155:58;'price_direction' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;156:13;'BuffHigh' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;157:36;'bias_direction' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;157:58;'price_direction' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;158:13;'BuffHigh' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;216:9;'View_Price' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;217:9;'View_Bias' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;223:61;'View_288minutes' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;224:22;'Count_Bars_Array' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;232:61;'View_288minutes' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;233:14;'Bars_Array' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;241:61;'View_288minutes' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;242:14;'Bars_Array' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;250:61;'View_288minutes' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\MotionLine\CreateMotionLine.mqh;251:14;'Bars_Array' - variable not defined

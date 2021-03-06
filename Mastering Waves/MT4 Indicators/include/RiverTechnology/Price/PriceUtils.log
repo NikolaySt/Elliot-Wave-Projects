@@ -1,0 +1,17 @@
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;63:4;'BuffPriceLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;64:4;'price_direction' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;64:22;'BuffPriceLine' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;79:10;'BuffUpPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;80:10;'BuffDownPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;82:10;'BuffDownPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;83:28;'BuffDownPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;94:10;'BuffUpPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;99:13;'BuffDownPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;103:28;'BuffUpPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;116:10;'BuffUpPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;117:10;'BuffDownPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;119:10;'BuffUpPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;120:28;'BuffUpPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;132:13;'BuffUpPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;134:10;'BuffDownPrice' - variable not defined
+2;75;C:\Program Files\MetaTrader 4 STS Demo\experts\include\RiverTechnology\Price\PriceUtils.mqh;136:28;'BuffDownPrice' - variable not defined

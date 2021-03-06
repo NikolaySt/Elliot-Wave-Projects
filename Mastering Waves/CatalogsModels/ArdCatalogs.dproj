@@ -1,0 +1,161 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{DB26B59D-4ED1-4A7F-9FF6-3E81DE3CEB35}</ProjectGuid>
+			<MainSource>ArdCatalogs.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.2</ProjectVersion>
+			<Base>True</Base>
+			<Platform>Win32</Platform>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_DependencyCheckOutputName>ArdCatalogs.exe</DCC_DependencyCheckOutputName>
+			<DCC_WriteableConstants>true</DCC_WriteableConstants>
+			<DCC_UsePackage>Vcl50;Vclx50;VclSmp50;Qrpt50;Vcldb50;Vclbde50;ibevnt50;vcldbx50;TeeUI50;TeeDB50;Tee50;TeeQR50;VCLIB50;vclie50;Inetdb50;Inet50;NMFast50;dclocx50;dclaxserver50;ArdOtherRTim60;Ard_HTreeD5V102_RT;ArdGZipRTim50;ArdGCRtim5;ArdQPrnRtim5;ArdSecretRTim50</DCC_UsePackage>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_Alignment>1</DCC_Alignment>
+			<DCC_UnitSearchPath>Utils;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_Platform>x86</DCC_Platform>
+			<DCC_K>false</DCC_K>
+			<DCC_F>false</DCC_F>
+			<DCC_S>false</DCC_S>
+			<DCC_N>true</DCC_N>
+			<DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+			<DebugSourcePath>Utils;$(DebugSourcePath)</DebugSourcePath>
+			<DCC_E>false</DCC_E>
+			<DCC_DcuOutput>DCU</DCC_DcuOutput>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_UnitSearchPath>C:\Program Files\Embarcadero\RAD Studio\8.0\Projects\Lib;D:\Programing\Projects\Elliot Wave Projects\Utils\Debug\Win32;D:\Programing\Projects\Elliot Wave Projects\Mastering Waves\CatalogsModels\DCU;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="ArdCatalogs.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="Modules\Models.pas">
+				<Form>ModelsForm</Form>
+			</DCCReference>
+			<DCCReference Include="Modules\ViewImages.pas">
+				<Form>ViewImagesFrame</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Modules\About.pas">
+				<Form>FormAbout</Form>
+			</DCCReference>
+			<DCCReference Include="Modules\DataBase.pas">
+				<Form>DBModuls</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Modules\EditTreeFrm.pas">
+				<Form>FormEdit</Form>
+			</DCCReference>
+			<DCCReference Include="Modules\FullScreen.pas">
+				<Form>FormFullScreen</Form>
+			</DCCReference>
+			<DCCReference Include="Modules\TextEditor.pas">
+				<Form>EditorFrame</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Modules\TreeModels.pas">
+				<Form>TreeModelsFrame</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Modules\Arhiv.pas">
+				<Form>DlgArhiv</Form>
+			</DCCReference>
+			<DCCReference Include="Modules\Arhivpr.pas">
+				<Form>DlgArhivProgres</Form>
+			</DCCReference>
+			<DCCReference Include="Utils\Utils.pas"/>
+			<DCCReference Include="Utils\UtilsTree.pas"/>
+			<DCCReference Include="Utils\FlipReverseRotateLibrary.pas"/>
+			<DCCReference Include="Utils\MessagesConst.pas"/>
+			<DCCReference Include="Utils\RotateBitmap.pas"/>
+			<DCCReference Include="Utils\UtilsDB.pas"/>
+			<DCCReference Include="Utils\UtilsImage.pas"/>
+			<DCCReference Include="Utils\ProgramConst.pas"/>
+			<DCCReference Include="Utils\RotateBitmapNT.pas"/>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">ArdCatalogs.dpr</Source>
+					</Source>
+					<Parameters/>
+					<Language>
+						<Language Name="ProjectLang">$00000402</Language>
+					</Language>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">28</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1026</VersionInfo>
+						<VersionInfo Name="CodePage">1251</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Ariadna Ltd</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">Ariadna Catalogs 1.0</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.0.28</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright">Copyrigth (c) 2007 Ariadna Ltd</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename">ArdCatalogs.exe</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName">Ariadna Catalogs</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">none</VersionInfoKeys>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

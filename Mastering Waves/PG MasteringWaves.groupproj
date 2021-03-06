@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{DFC39A16-18AD-4FF7-BBA6-234AEDD86F75}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="CatalogsModels\ArdCatalogs.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RulesWaves\RulesWaves.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ArdCatalogs">
+			<MSBuild Projects="CatalogsModels\ArdCatalogs.dproj"/>
+		</Target>
+		<Target Name="ArdCatalogs:Clean">
+			<MSBuild Targets="Clean" Projects="CatalogsModels\ArdCatalogs.dproj"/>
+		</Target>
+		<Target Name="ArdCatalogs:Make">
+			<MSBuild Targets="Make" Projects="CatalogsModels\ArdCatalogs.dproj"/>
+		</Target>
+		<Target Name="RulesWaves">
+			<MSBuild Projects="RulesWaves\RulesWaves.dproj"/>
+		</Target>
+		<Target Name="RulesWaves:Clean">
+			<MSBuild Targets="Clean" Projects="RulesWaves\RulesWaves.dproj"/>
+		</Target>
+		<Target Name="RulesWaves:Make">
+			<MSBuild Targets="Make" Projects="RulesWaves\RulesWaves.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ArdCatalogs;RulesWaves"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ArdCatalogs:Clean;RulesWaves:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ArdCatalogs:Make;RulesWaves:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

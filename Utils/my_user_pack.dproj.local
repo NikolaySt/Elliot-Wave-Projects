@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.716,=vclactnband.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.713,=vcl.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.725,=xmlrtl.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.710,=designide.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.721,=vclx.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.444,D:\Programing\Projects\Elliot Wave Projects\Utils\my_user_pack.dproj=C:\Windows\system32\my_user_pack.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.685,D:\Programing\Projects\Elliot Wave Projects\Utils\GIFImageEx.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.677,=D:\Programing\Projects\Elliot Wave Projects\Utils\GIFImageEx.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.703,=D:\Programing\Projects\Elliot Wave Projects\Utils\RichEditURL.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.327,=rtl.dcp</Transaction>
+    <Transaction>2013.04.29 09:48:17.192,=D:\Programing\Projects\Elliot Wave Projects\Utils\GIFImageEx.pas</Transaction>
+  </Transactions>
+</BorlandProject>
